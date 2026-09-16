@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>BYTEGRID // Arcade</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@500;700;900&family=Rajdhani:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <div class="grid-floor" aria-hidden="true"></div>
+  <div class="glow-blob blob-a" aria-hidden="true"></div>
+  <div class="glow-blob blob-b" aria-hidden="true"></div>
+
+  <header class="topbar">
+    <div class="logo">BYTE<span>GRID</span></div>
+    <nav class="nav">
+      <a href="#juegos">Juegos</a>
+      <a href="#acerca">Acerca</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero">
+      <p class="hero-kicker">Sala de máquinas digital</p>
+      <h1 class="hero-title" id="hero-title">
+        <span class="line">TU PRÓXIMA</span>
+        <span class="line accent">PARTIDA</span>
+        <span class="line">EMPIEZA AQUÍ</span>
+      </h1>
+      <p class="hero-desc">
+        Un arcade construido con circuitos, luz y reflejos rápidos.
+        Ocho cabinas, un mismo lugar. Elige una y entra en juego.
+      </p>
+      <a href="#juegos" class="cta">Ver juegos disponibles</a>
+
+      <div class="hero-readout" aria-hidden="true">
+        <span>SYS.STATUS</span>
+        <span class="dot on"></span>
+        <span>ONLINE</span>
+      </div>
+    </section>
+
+    <section class="juegos" id="juegos">
+      <div class="section-head">
+        <h2>Cabinas activas</h2>
+        <span class="count" id="game-count">1 / 8 en línea</span>
+      </div>
+
+      <div class="cabinet-grid">
+
+        <!-- CABINA 1: juego activo -->
+        <article class="cabinet is-live">
+          <div class="cabinet-screen">
+            <div class="mini-stars" aria-hidden="true"></div>
+            <div class="mini-ship" aria-hidden="true"></div>
+            <div class="mini-bolt b1" aria-hidden="true"></div>
+            <div class="mini-bolt b2" aria-hidden="true"></div>
+          </div>
+          <div class="cabinet-body">
+            <h3>Nave Espacial vs Oleadas</h3>
+            <p>Shooter 2D. Sobrevive 10 minutos a oleadas de enemigos cada vez más rápidas.</p>
+            <div class="cabinet-meta">
+              <span class="tag">Shooter</span>
+              <span class="tag">10 min</span>
+            </div>
+            <a href="./nave-espacial-vs-oleadas/index.html" class="play-btn">Jugar ahora</a>
+          </div>
+        </article>
+
+        <!-- CABINAS 2-8: espacio reservado para próximos juegos -->
+        <article class="cabinet is-locked" data-slot="02">
+          <div class="cabinet-screen locked-screen">
+            <span class="slot-code">SLOT_02</span>
+          </div>
+          <div class="cabinet-body">
+            <h3>Próximamente</h3>
+            <p>Esta cabina está reservada para el siguiente juego del arcade.</p>
+            <div class="cabinet-meta"><span class="tag tag-muted">Sin asignar</span></div>
+            <span class="play-btn is-disabled">Bloqueado</span>
+          </div>
+        </article>
+
+        <article class="cabinet is-locked" data-slot="03">
+          <div class="cabinet-screen locked-screen">
+            <span class="slot-code">SLOT_03</span>
+          </div>
+          <div class="cabinet-body">
+            <h3>Próximamente</h3>
+            <p>Esta cabina está reservada para el siguiente juego del arcade.</p>
+            <div class="cabinet-meta"><span class="tag tag-muted">Sin asignar</span></div>
+            <span class="play-btn is-disabled">Bloqueado</span>
+          </div>
+        </article>
+
+        <article class="cabinet is-locked" data-slot="04">
+          <div class="cabinet-screen locked-screen">
+            <span class="slot-code">SLOT_04</span>
+          </div>
+          <div class="cabinet-body">
+            <h3>Próximamente</h3>
+            <p>Esta cabina está reservada para el siguiente juego del arcade.</p>
+            <div class="cabinet-meta"><span class="tag tag-muted">Sin asignar</span></div>
+            <span class="play-btn is-disabled">Bloqueado</span>
+          </div>
+        </article>
+
+        <article class="cabinet is-locked" data-slot="05">
+          <div class="cabinet-screen locked-screen">
+            <span class="slot-code">SLOT_05</span>
+          </div>
+          <div class="cabinet-body">
+            <h3>Próximamente</h3>
+            <p>Esta cabina está reservada para el siguiente juego del arcade.</p>
+            <div class="cabinet-meta"><span class="tag tag-muted">Sin asignar</span></div>
+            <span class="play-btn is-disabled">Bloqueado</span>
+          </div>
+        </article>
+
+        <article class="cabinet is-locked" data-slot="06">
+          <div class="cabinet-screen locked-screen">
+            <span class="slot-code">SLOT_06</span>
+          </div>
+          <div class="cabinet-body">
+            <h3>Próximamente</h3>
+            <p>Esta cabina está reservada para el siguiente juego del arcade.</p>
+            <div class="cabinet-meta"><span class="tag tag-muted">Sin asignar</span></div>
+            <span class="play-btn is-disabled">Bloqueado</span>
+          </div>
+        </article>
+
+        <article class="cabinet is-locked" data-slot="07">
+          <div class="cabinet-screen locked-screen">
+            <span class="slot-code">SLOT_07</span>
+          </div>
+          <div class="cabinet-body">
+            <h3>Próximamente</h3>
+            <p>Esta cabina está reservada para el siguiente juego del arcade.</p>
+            <div class="cabinet-meta"><span class="tag tag-muted">Sin asignar</span></div>
+            <span class="play-btn is-disabled">Bloqueado</span>
+          </div>
+        </article>
+
+        <article class="cabinet is-locked" data-slot="08">
+          <div class="cabinet-screen locked-screen">
+            <span class="slot-code">SLOT_08</span>
+          </div>
+          <div class="cabinet-body">
+            <h3>Próximamente</h3>
+            <p>Esta cabina está reservada para el siguiente juego del arcade.</p>
+            <div class="cabinet-meta"><span class="tag tag-muted">Sin asignar</span></div>
+            <span class="play-btn is-disabled">Bloqueado</span>
+          </div>
+        </article>
+
+      </div>
+    </section>
+
+    <section class="acerca" id="acerca">
+      <h2>Acerca del arcade</h2>
+      <p>
+        BYTEGRID es un espacio en construcción permanente: cada cabina nueva se conecta
+        a esta misma rejilla. Vuelve pronto, quedan siete puestos por encender.
+      </p>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <span>BYTEGRID ARCADE</span>
+    <span class="footer-sep">·</span>
+    <span>Construido con HTML, CSS y JS</span>
+  </footer>
+
+</body>
+</html>
