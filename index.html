@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Nave Espacial vs Oleadas</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div id="game-container">
+    <h1>NAVE ESPACIAL VS OLEADAS</h1>
+
+    <div id="hud">
+      <div id="timer">Tiempo restante: 10:00</div>
+      <div id="status">Vida: ❤️</div>
+    </div>
+
+    <canvas id="gameCanvas" width="800" height="600"></canvas>
+
+    <div id="overlay" class="hidden">
+      <h2 id="overlay-title">GAME OVER</h2>
+      <h3 id="overlay-subtitle"></h3>
+      <button id="restart-btn">Reintentar</button>
+    </div>
+
+    <div id="controls">
+      <p><strong>Controles:</strong> W/A/S/D para moverte · Espacio para disparar</p>
+      <p id="start-hint">Pulsa cualquier tecla de movimiento o Espacio para comenzar</p>
+    </div>
+  </div>
+
+  <script src="game.js"></script>
+</body>
+</html>
